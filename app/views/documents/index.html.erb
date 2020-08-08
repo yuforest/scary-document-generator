@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <section class="my-4">
+    <h2 class="display-4">
+      ようじょ文書一覧
+      <% if params[:search].present? %>
+        (<%= params[:search] %>の検索結果)
+      <% end %>
+    </h2>
+    <% @documents.each do |document| %>
+      <%= render "shared/components/document_list_item", document: document %>
+    <% end %>
+    <%= paginate @documents %>
+  </section>
+</div>

@@ -1,0 +1,23 @@
+<% set_meta_tags title: @document.name + "さんのようじょ文書",
+                 description: @document.content.to_plain_text,
+                 og: {
+                   title: @document.title,
+                   description: @document.content,
+                   image: ogp_images_url(text: @document.content.to_plain_text.gsub(/[ ]/,""))
+                 }
+%>
+
+<div class="container mt-4">
+  <section class="my-4">
+    <div class="mt-3">
+      <%= @document.content %>
+    </div>
+    <div class="mt-3 pt-2 border-top border-primary d-flex justify-content-between">
+      <div>
+        <i class="fas fa-eye mr-1"></i>
+        <%= number_with_delimiter(@page_views) %>
+      </div>
+      <%= render "shared/public/sns_buttons", url: document_url(@document), title: @document.title %>
+    </div>
+  </section>
+</div>

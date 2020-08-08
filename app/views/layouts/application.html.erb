@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <% set_meta_tags og: {
+                       type: 'article',
+                       url: request.url
+                     },
+                     twitter: {
+                       card: "summary_large_image",
+                     },
+                     fb: {
+                       app_id: "621898788712649"
+                     }
+    %>
+    <%= display_meta_tags site: 'ようじょ文書ジェネレーター' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="/argon/assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="/argon/assets/css/argon-design-system.min.css" rel="stylesheet">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <%= render "shared/header" %>
+      <%= yield %>
+      <%= render "shared/footer" %>
+      <%= yield :scripts %>
+    </div>
+  </body>
+</html>
