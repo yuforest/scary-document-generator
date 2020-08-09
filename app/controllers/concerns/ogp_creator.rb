@@ -2,11 +2,11 @@ class OgpCreator
   require 'mini_magick'
   BASE_IMAGE_PATH = './app/assets/images/ogp-background.jpg'
   GRAVITY = 'northwest'
-  TEXT_POSITION = '70,110'
+  TEXT_POSITION = '40,90'
   FONT = './app/assets/fonts/yojo.ttf'
-  FONT_SIZE = 45
-  INDENTION_COUNT = 23
-  ROW_LIMIT = 10
+  FONT_SIZE = 95
+  INDENTION_COUNT = 11
+  ROW_LIMIT = 5
 
   def self.build(text)
     text = prepare_text(text)

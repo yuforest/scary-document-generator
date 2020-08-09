@@ -1,0 +1,14 @@
+<div class="sns_wrapper">
+  <ul class="share">
+    <li class="default">
+      <%= link_to ogp_images_path(text: document.content, download: true), target: :_blank do %>
+        <i class="fas fa-file-download"></i>
+      <% end %>
+    </li>
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?url=<%= url %>&text=<%= title %>&hashtags=ようじょぶんしょジェネレーター" target="_blank" rel="nofollow noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>

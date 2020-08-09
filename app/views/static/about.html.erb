@@ -1,36 +1,48 @@
-<%= render "shared/public/hero_section" %>
+<%= render "shared/components/hero_section" %>
 <div class="section features-6">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="info info-horizontal info-hover-primary">
           <div class="description pl-4">
-            <h5 class="title">あなたが出会ったクズ男の特徴を書き込む</h5>
+            <h5 class="title">ようじょの書いたような文章を作成する</h5>
             <p>
-              あなたが出会ったクズ男の特徴を書き込むことで、将来お金や時間を無駄にしたと思う人が減るかもしれません。<br>
-              自分の思考を整理するために書き込むのも良いでしょう。
+              ようじょに戻りたいあなたも、ようじょになれなかったあなたも文章上はようじょになることができます。
+              まだ世界にないコンテンツを解き放ちましょう。
             </p>
-            <%= link_to "クズ男の特徴を投稿する", new_user_post_path, class: 'text-info' %>
+            <%= link_to "さくせいする", new_document_path, class: 'text-info' %>
           </div>
         </div>
         <div class="info info-horizontal info-hover-primary mt-5">
           <div class="description pl-4">
-            <h5 class="title">他の人が出会ったクズ男の特徴を見る</h5>
+            <h5 class="title">他の人のようじょぶんしょをみる</h5>
             <p>
-              あなたがまだ見ぬクズ男に他の人は既に出会っているかもしれません。
-              先人の叡智を学ぶことで人生の無駄な時間を省くことができるでしょう。
+              他のようじょぶんしょを見ることであなたは童心に帰ることができ、
+              その癒しのパワーによって普段の生産性が何倍にもなるかもしれません。
+              また気に入ったらTwitterでシェアもできます。
             </p>
-            <%= link_to "他の人の投稿を見る", posts_path, class: 'text-info' %>
+            <%= link_to "ようじょぶんしょいちらん", documents_path, class: 'text-info' %>
           </div>
         </div>
         <div class="info info-horizontal info-hover-primary mt-5">
           <div class="description pl-4">
-            <h5 class="title">他の人の投稿にいいねやコメントを残す</h5>
+            <h5 class="title">画像を保存する</h5>
             <p>
-              あなたが出会ったクズ男に他の人も出会っているかも？<br>
-              他の人の投稿に共感したり、物申したくなった時はいいねしたり、コメントを残すことができます。
+              あなたや他の人が作ったようじょぶんしょは保存することができます。<br>
+              保存方法はシェアボタンの横のダウンロードボタンを押すだけ。
             </p>
-            <%= link_to "他の人の投稿一覧を見る", posts_path, class: 'text-info' %>
+            <%= link_to "ぶんしょいちらんから保存する", documents_path, class: 'text-info' %>
+          </div>
+        </div>
+        <div class="info info-horizontal info-hover-primary mt-5">
+          <div class="description pl-4">
+            <h5 class="title">フォントについて</h5>
+            <p>
+              こちらはフリーフォントの<a href="https://tanukifont.com/yojo-font/">「ようじょふぉんと」</a>を使用しております。<br>
+              素晴らしいフォントのおかげでこのサイトも生まれました。<br>
+              ありがとうございます。
+            </p>
+            <a href="ttps://tanukifont.com/yojo-font/" class="text-info">フォントのページにいく</a>
           </div>
         </div>
       </div>

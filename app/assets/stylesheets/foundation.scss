@@ -1,0 +1,27 @@
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}
+.btn.btn-pink {
+  color: white;
+  background-color: #F3A4B5;
+  &:hover {
+    color: white;
+  }
+}
+
+.dropdown-menu .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #F3A4B5;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #F3A4B5;
+  border-color: #F3A4B5;
+}
