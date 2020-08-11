@@ -52,3 +52,4 @@ production:
   database: youzyo_document_generator_production
   username: youzyo_document_generator
   password: <%= ENV['YOUZYO_DOCUMENT_GENERATOR_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
