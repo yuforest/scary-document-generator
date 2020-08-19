@@ -31,6 +31,6 @@ class DocumentsController < ApplicationController
   end
 
   def set_introduction
-    @introduction = "ようじょっぽいぶんしょうをかんたんにつくれるアプリケーションだよ。つかってくれたらうれしいな。"
+    @introduction = "血文字で書かれたような怖い文章を簡単に作成できるサイトです。怖くない文章も勝手に怖くなってくれます。"
   end
 end

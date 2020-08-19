@@ -1,7 +1,7 @@
-<% set_meta_tags title: @document.name + "さんのようじょぶんしょ",
+<% set_meta_tags title: @document.name + "さんの怖い文書",
                  description: @document.content,
                  og: {
-                   title: @document.name + "さんのようじょぶんしょ",
+                   title: @document.name + "さんの怖い文書",
                    description: @document.content,
                    image: ogp_images_url(text: @document.content.gsub(/[ ]/,""))
                  }
@@ -10,7 +10,7 @@
 <div class="container mt-4">
   <section class="my-4">
     <img class="w-100 d-block" src="<%= ogp_images_url(text: @document.content) %>">
-    <p class="font-size-sm text-right"><%= @document.name %>さんがさくせい</p>
+    <p class="font-size-sm text-right"><%= @document.name %>さんが作成</p>
     <div class="mt-3 pt-2 border-top border-primary d-flex justify-content-between">
       <div>
         <i class="fas fa-eye mr-1"></i>
